@@ -12,12 +12,13 @@ body{
     background: #080808;
     color: #fff;
 }
-#header{
-    width: 100%;
+#header {
+    display: flex;
     height: 100vh;
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(images/MYPIC.png.jpg);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .container{
@@ -32,7 +33,9 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    margin-top: 10px;
+    width: 300px;
+    margin-right: 10px;
 }
 
 nav ul li{
@@ -70,6 +73,9 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
+    color: #ff004f;
+}
+.header-text p span{
     color: #ff004f;
 }
 /* -----------about--------------- */
