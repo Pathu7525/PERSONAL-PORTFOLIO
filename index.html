@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- this is a link for icons -->
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/coollogo_com-9727711.png" class="logo"> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Coding Profiles</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p >STUDENT AT <span>IIIT ALLAHABAD </span></p>
+            <h1>Hi, I'm <span>Prathmesh</span><br>From Maharashtra, India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/trial.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a BTech student in Information Technology at IIIT Allahabad. I excel in problem-solving ,competitive programming and currently learning web development.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Achievement</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Competitive Programmer</span><br>Codeforces,Codechef and Leetcode</li>
+                        <li><span>Web Development</span><br>Front end Developer (HTML,CSS,JSS)</li>
+                        <li><span>DSA</span><br>Good at data structures and algorithm</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>JEE/IIT 2022</span><br>Remarkable Rank Of 4431/ 12 lakh Participants(99.52 PERCENTILE)</li>
+                        <li><span>12TH HSC BOARD</span><br>94.5 %</li>
+                        <li><span>10TH-CBSE</span><br>98 %</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-Ongoing</span><br>Undergrad At IIIT Allahabad</li>
+                        <li><span>2020-2022</span><br>12th-Ambedkar College, Nagpur</li>
+                        <li><span>2010-2020</span><br>Jet Kids International School, Pusad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Coding Profiles</h1>
+        <div class="services-list">
+            <div>
+                <img src="images/cc-logo.svg" style="width:100px;margin-bottom:10px;">
+                <!-- use to add icons from online links -->
+                <h2>Codechef</h2>
+                <p>4 STARS.Best Global Rank of 51.
+                    Solved more than 200 questions with 30+ contest.
+                </p>
+                <a href="https://www.codechef.com/users/ptmpampattiwar">Handle : ptmpampattiwar</a>
+            </div>
+            <div>
+                <img src="images/codeforces-sponsored-by-ton.png" style="width:100px;margin-bottom:10px;">
+                <h2>Codeforces</h2>
+                <p>Specialist at CF. Solved more than 500 questions with 50+ contests.Best official rank of 245 among 40k participants</p>
+                <a href="https://codeforces.com/profile/Pathu123">Handle: Pathu123</a>
+            </div>
+            <div>
+                <img src="images/LeetCode_Sharing.png" style="width:100px;margin-bottom:10px;">
+                <h2>Leetcode</h2>
+                <p>Knight at leetcode. Solved more than 100 questions with 20+ contest. Best Global rank of 792 among 30k participants.</p>
+                <a href="https://leetcode.com/u/user9168lk/">Handle: user9168lk</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Weather Forecast Web Application </h3>
+                    <p>Provides real time Weather Condition Fetching data From third party weather API
+                        .Developed a dynamic weather forecasting web application using HTML, CSS and JavaScript.
+                        .Integrated third-party weather API to fetch and display real-time weather data.
+                        .Utilized CSS for layout design and styling.
+                        </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>Created a comprehensive personal portfolio website using HTML, CSS, and JavaScript.
+                        .Developed five main sections: Home, About, Services, Portfolio and Contact.
+                        .Responsive Design Techniques: Ensuring the site is mobile-friendly and adapts to various screen sizes.
+                        .Google Sheets Integration: Using JavaScript to collect and update form data in Google Sheets.
+                        </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> ptm.pampattiwar@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 9421772827</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/prathmesh-pampattiwar-a37006251"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <!-- type equal email specifies that @ and other fields are ensured in it -->
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>THANKS FOR VISITING <i class="fas fa-heart"></i> </p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
